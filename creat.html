@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glassmorphism Demo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('D:/Photo Storage/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      margin: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .glass-card {
+      width: 830px;
+      height: 360px;
+      background: rgba(255, 255, 255, 0.01);
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      color: white;
+      /* text-align: center; */
+      position: absolute;
+      top: 150px;
+      left: 150px;
+    }
+
+    .glass-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .glass-card p {
+      padding: 0 20px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    
+  </div>
+
+  <button onclick="downloadImage()">保存为图片</button>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+  function downloadImage() {
+    const element = document.getElementById('capture');
+    html2canvas(element, {
+      scale: 2, // 提高清晰度
+      useCORS: true
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'screenshot.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  }
+</script>
+</body>
+</html>
