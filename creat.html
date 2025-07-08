@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #000; /* 避免空白背景 */
+      
     }
 
     .container {
@@ -75,19 +75,34 @@
       flex-direction: column;
       justify-content: center;
     }
+    .glass-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
   </style>
 </head>
 <body>
 
-  <div class="container" id="capture">
-    <img src="MSI.png" alt="背景圖" class="bg-img" />
+  <!-- <div class="container" id="capture">
+    <img src="" alt="背景圖" class="bg-img" />
     <div class="glass-card">
       <h2>MSI Glass UI</h2>
     </div>
-  </div>
+  </div> -->
 
-  <button onclick="downloadImage()">保存為圖片</button>
+  <!-- <button onclick="downloadImage()">保存為圖片</button> -->
 
   <h1 class="test">Introduction</h1>
+  <div class="glass-text">Liquid Glass Text</div>
+
 </body>
 </html>

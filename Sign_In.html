@@ -1,7 +1,7 @@
 <!--
 
                            SEHH1016 Introduction to Internet Technology
-                           GROUP PROJECT | GROUP 05 | Page 0: index
+                           GROUP PROJECT | GROUP 05 | Page 0: Sign_In page
 +-------------------------------+-------------------------------+-------------------------------+
 |          STUDENT NAME:        |        STUDENT NUMBER:        |      CLASS/TUTORIAL GROUP:    |
 +-------------------------------+-------------------------------+-------------------------------+
@@ -9,7 +9,7 @@
 |         2. Lin_Rui_peng       |          24168294A            |            c01C               |
 |         3. Wu_Jiacheng        |          24127656A            |            c01A               |
 |         4. LU_Chun_Hei        |          24004908A            |            c01C               |
-|         5. LO Kwok Po Jimmy   |          23094383A            |           [NULL]              |
+|         5. LO Kwok Po Jimmy   |          23094383A            |            c01                |
 |         6. YANG Leishuo       |          23119695A            |           [NULL]              |
 +-------------------------------+-------------------------------+-------------------------------+
 
@@ -20,33 +20,43 @@
         <title>Sign In</title>
     </head>
     <body>
-        <table>
+        <a href="index.html">
+            <img src="Image_Resource/undo_1.png" alt="This is a return image, click this you will return to home page." align="right" width="50px">
+        </a>
+        <hr>
+        <table align="center" border="1">
             <tr>
                 <td>
 
                 </td>
                 
                 <td>
-                    <form action="" method="post">
+                    <form action="" method="">
                         <table>
-                            <caption><p>Sign On</p></caption>
-                            <tr>
+                            <caption><p>Sign In</p></caption>
+                            <tr height="40px">
                                 <td>User Name:</td>
-                                <td><input type="text" name="" size="30"><br></td>
+                                <td><input type="text" name="" size="30"></td>
                             </tr>
 
-                            <tr>
+                            <tr height="40px">
                                 <td>Password:</td>
-                                <td><input type="password" ><br></td>
+                                <td><input type="password" size="30"></td>
                             </tr>
 
-                            <tr>
+                            <tr height="40px">
                                 <td>Identity:</td>
-                                <td><input type="radio" name="User_Type" value="Student">Student <input type="radio" name="User_Type" value="Staff">Staff</td>
+                                <td wid="1000px"><input type="radio" name="User_Type" value="Student" align="left">Student<input type="radio" name="User_Type" value="Staff" align="right">Staff</td>
+                            </tr>
+
+                            <tr height="35px">
+                                <td colspan="2">
+                                    <hr>
+                                </td>
                             </tr>
 
                             <tr>
-                                <td colspan="2" align="right"><input type="submit" value="Sign In"></td>
+                                <td colspan="2" align="right" height="40px"><a href=""><input type="submit" value="Sign In"></a></td>
                             </tr>
                         </table>
                     </form>
