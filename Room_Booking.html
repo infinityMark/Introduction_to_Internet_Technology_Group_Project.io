@@ -4,29 +4,104 @@
         <title>Rook Booking</title>
     </head>
     <body>
-        <!-- <form action="Submission_Confirmation_Page.html" method=""> -->
-            <table>
+        <form action="Submission_Confirmation_Page.html" method="">
+            <table width="450px">
                 <tr>
-                    <td>Date:
-                        <br>
+                    <th colspan="2"><h1 align="left">Study Group Booking</h1></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td height="70px">
+                        <h2>Date:</h2>
+                        <!-- <br> -->
+                    </td>
+                    <td>
                         <input type="date" name="" id="">
                     </td>
                 </tr>
                 <tr>
+                    <td height="70px">
+                        <h2>Room Number:</h2>
+                    </td>
                     <td>
-                        Room Number:
-                        <br>
-                        <select name="">
-                            <option value=""></option>
+                        <select name="Room_number">
+                            <option value="" selected>Please select</option>
+                            <option value="14" bgcolor="#ff0000">Room 14</option>
+                            <option value="15">Room 15</option>
+                            <option value="16">Room 16</option>
                         </select>
                     </td>
                     <!-- <td><input type="hidden" name="" value="2599999A"></td> -->
                     <!-- <td><input type="date" name="" id=""></td> -->
                 </tr>
                 <tr>
-                    <td align="right" height="40px"><input type="submit" value="Book"></td>
+                    <td><h2>Time slot:</h2></td>
+                    <td>
+                        From 
+                        <select name="" id="">
+                            <option value="9">09:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                        </select>
+                        To 
+                        <select name="" id="">
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <a href="index.html" target="_blank"><input type="radio" name="a" id="">4/F <input type="radio" name="a" id="">6/F</a>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td bgcolor="#A12A3D" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td align="right" height="60px" colspan="2"><input type="submit" value="Book"></td>
                 </tr>
             </table>
-        <!-- </form> -->
+        </form>
+        <table border="1">
+            <tr>
+                <th height="40px" width="150px">Facility</th>
+                <th>09:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-13:00</th>
+                <th>13:00-14:00</th>
+                <th>14:00-15:00</th>
+                <th>15:00-16:00</th>
+            </tr>
+            <tr>
+                <td>Room 1 (2-4 users)</td>
+                <td><input type="checkbox" name="" id=""></td>
+                <td><input type="checkbox" name="" id="" hidden></td>
+            </tr>
+        </table>
     </body>
 </html>
