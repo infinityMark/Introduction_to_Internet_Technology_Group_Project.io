@@ -1,0 +1,61 @@
+<!--
+
+                           SEHH1016 Introduction to Internet Technology
+                           GROUP PROJECT | GROUP 05 | Page 0: index
++-------------------------------+-------------------------------+-------------------------------+
+|          STUDENT NAME:        |        STUDENT NUMBER:        |      CLASS/TUTORIAL GROUP:    |
++-------------------------------+-------------------------------+-------------------------------+
+|     *** 1. LUI_Hoi_To         |          24047318A            |            c01A ***           |
+|         2. Lin_Rui_peng       |          24168294A            |            c01C               |
+|         3. Wu_Jiacheng        |          24127656A            |            c01A               |
+|         4. LU_Chun_Hei        |          24004908A            |            c01C               |
+|         5. LO Kwok Po Jimmy   |          23094383A            |            c01C               |
+|         6. YANG Leishuo       |          23119695A            |            c01A               |
++-------------------------------+-------------------------------+-------------------------------+
+
+-->
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="match_results.html" method="get">
+            <fieldset>
+                <legend>Become a Tutor</legend>
+                
+                
+                <label>Courses You Can Tutor:
+                <textarea name="courses" rows="3" required 
+                            placeholder="List courses you excel at..."></textarea>
+                </label><br>
+                
+                <label>Availability:
+                <input type="checkbox" name="avail" value="mon_eve"> Mon Evening
+                <input type="checkbox" name="avail" value="wed_aft"> Wed Afternoon
+                <input type="checkbox" name="avail" value="fri_mor"> Fri Morning
+                </label><br>
+                
+                
+                <label>Tutoring Method:
+                <input type="radio" name="method" value="online" required> Online
+                <input type="radio" name="method" value="inperson"> In-person
+                </label><br>
+                
+                
+                <label>Experience Level:
+                <select name="experience">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                </label><br>
+                
+                <label>Hourly Rate (Optional):
+                <input type="number" name="rate" min="0" step="10" value="0">
+                </label>
+            </fieldset>
+        
+        <button type="submit">Join as Tutor</button>
+        </form>
+    </body>
+</html>

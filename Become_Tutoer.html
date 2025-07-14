@@ -1,0 +1,67 @@
+<!--
+
+                           SEHH1016 Introduction to Internet Technology
+                           GROUP PROJECT | GROUP 05 | Page 0: index
++-------------------------------+-------------------------------+-------------------------------+
+|          STUDENT NAME:        |        STUDENT NUMBER:        |      CLASS/TUTORIAL GROUP:    |
++-------------------------------+-------------------------------+-------------------------------+
+|     *** 1. LUI_Hoi_To         |          24047318A            |            c01A ***           |
+|         2. Lin_Rui_peng       |          24168294A            |            c01C               |
+|         3. Wu_Jiacheng        |          24127656A            |            c01A               |
+|         4. LU_Chun_Hei        |          24004908A            |            c01C               |
+|         5. LO Kwok Po Jimmy   |          23094383A            |            c01C               |
+|         6. YANG Leishuo       |          23119695A            |            c01A               |
++-------------------------------+-------------------------------+-------------------------------+
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="match_results.html" method="post">
+            <fieldset>
+                <legend>Find a Tutor</legend>
+                
+                <label>Course Needing Help:
+                <input type="text" name="course" list="courses" required>
+                <datalist id="courses">
+                    <option value="COMP101 Programming">
+                    <option value="MATH202 Calculus">
+                    <option value="PHYS101 Physics">
+                </datalist>
+                </label><br>
+                
+            
+                <label>Help With:
+                <select name="help_type" required>
+                    <option value="">-- Select --</option>
+                    <option value="homework">Homework</option>
+                    <option value="exam">Exam Preparation</option>
+                    <option value="project">Project Assistance</option>
+                </select>
+                </label><br>
+                
+            
+                <label>Available Times:
+                <input type="checkbox" name="times" value="mon_eve"> Mon Evening
+                <input type="checkbox" name="times" value="wed_aft"> Wed Afternoon
+                <input type="checkbox" name="times" value="fri_mor"> Fri Morning
+                </label><br>
+                
+            
+                <label>Contact Method:
+                <input type="radio" name="contact" value="email" required> Email
+                <input type="radio" name="contact" value="whatsapp"> WhatsApp
+                </label><br>
+                
+                <label>Your Contact Info:
+                <input type="text" name="contact_info" required>
+                </label>
+            </fieldset>
+        
+        <button type="submit">Find Tutors</button>
+        </form>
+    </body>
+</html>
