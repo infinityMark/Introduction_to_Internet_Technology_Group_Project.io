@@ -1,0 +1,176 @@
+<!--
+
+                           SEHH1016 Introduction to Internet Technology
+                           GROUP PROJECT | GROUP 05 | Page 0: index
++-------------------------------+-------------------------------+-------------------------------+
+|          STUDENT NAME:        |        STUDENT NUMBER:        |      CLASS/TUTORIAL GROUP:    |
++-------------------------------+-------------------------------+-------------------------------+
+|     *** 1. LUI Hoi To         |          24047318A            |            c01A ***           |
+|         2. Lin Rui peng       |          24168294A            |            c01C               |
+|         3. Wu Jiacheng        |          24127656A            |            c01A               |
+|         4. LU Chun Hei        |          24004908A            |            c01C               |
+|         5. LO Kwok Po Jimmy   |          23094383A            |            c01C               |
+|         6. YANG Leishuo       |          23119695A            |            c01A               |
++-------------------------------+-------------------------------+-------------------------------+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback System</title>
+</head>
+<body>
+    <header>
+        <h1 align="center ">Student Feedback Collection</h1>
+        <p>We value your input to improve our educational programs</p>
+    </header>
+        <form method="post" action="#">
+            <table border="1">
+                <caption><h2>Personal Information</h2></caption>
+                <tr>
+                    <td width="30%">Full Name:</td>
+                    <td><input type="text" id="name" name="name" size="40" required></td>
+                </tr>
+                <tr>
+
+                    <td>Student ID:</td>
+                    <td><input type="text" id="student-id" name="student_id" size="40"></td>
+
+                </tr>
+                <tr>
+                     <td>Email Address: </td>
+                    <td><input type="email" id="email" name="email" size="40" required></td>
+                </tr>
+            </table>
+            
+            <br>
+            
+            <table border="1">
+                <caption><h2>Course Information</h2></caption>
+                <tr>
+                    <td width="30%">Course:</td>
+                    <td>
+                        <select id="course" name="course" required>
+                            <option value="">-- Select a Course --</option>
+                            <option value="math101">Mathematics 101</option>
+                            <option value="eng102">English Literature 102</option>
+                            <option value="cs201">Computer Science 201</option>
+                            <option value="bio101">Biology 101</option>
+                            <option value="hist202">History 202</option>
+                            <option value="chem103">Chemistry 103</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lecturer:</td>
+                    <td><input type="text" id="Lecturer" name="Lecturer" size="40" required></td>
+                </tr>
+                <tr>
+                    <td>Semester:</td>
+                    <td>
+                        <select id="semester" name="semester" required>
+                            <option value="">-- Select Semester --</option>
+                            <option value="semester1">Semester 1</option>
+                            <option value="semester2">Semester 2</option>
+                            <option value="semester3">Semester 3</option>
+				 <option value="semester4">Semester 4</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <br>
+            
+            <table border="1">
+                <caption><h2>Course Feedback</h2></caption>
+                <tr>
+                    <td width="30%">Overall Rating:</td>
+                    <td>
+                        <input type="radio" id="rating5" name="rating" value="5">Excellent (5)<br>
+                        
+                        <input type="radio" id="rating4" name="rating" value="4">Good (4)<br>
+                        
+                        <input type="radio" id="rating3" name="rating" value="3">Average (3)<br>
+                        
+                        <input type="radio" id="rating2" name="rating" value="2">Below Average (2)<br>
+                        
+                        <input type="radio" id="rating1" name="rating" value="1">Poor (1)<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Strengths</td>
+                    <td><textarea id="strengths" name="strengths" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Areas for Improvement:</td>
+                    <td><textarea id="improvements" name="improvements" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Suggestions:</td>
+                    <td><textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea></td>
+                </tr>
+            </table>
+            
+            <br>
+            
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption><h2>Additional</h2></caption>
+                <tr>
+                    <td width="30%">Would you recommend this course?</td>
+                    <td>
+                        <input type="radio" id="recommend-yes" name="recommend" value="yes">Yes
+                        
+                        <input type="radio" id="recommend-no" name="recommend" value="no">No
+                        
+                        <input type="radio" id="recommend-maybe" name="recommend" value="maybe">Maybe
+                    </td>
+                </tr>
+                <tr>
+                    <td>Challenges Faced:</td>
+                    <td><textarea id="challenges" name="challenges" rows="4" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="contact-permission" name="contact_permission">
+                        I give permission to be contacted for follow-up questions.
+                    </td>
+                </tr>
+            </table>
+            
+            <br>
+
+<table border="1" width="100%">
+			<caption><h2>Website Feedback</h2></caption>
+			<tr>
+				<td>userfriendly:</td>
+				<td> 
+<input type="radio" id="rating5" name="rating" value="5">Excellent (5)<br>
+                        
+                        <input type="radio" id="rating4" name="rating" value="4">Good (4)<br>
+                        
+                        <input type="radio" id="rating3" name="rating" value="3">Average (3)<br>
+                        
+                        <input type="radio" id="rating2" name="rating" value="2">Below Average (2)<br>
+                        
+                        <input type="radio" id="rating1" name="rating" value="1">Poor (1)<br> </td>
+			</tr>
+		</table>
+
+            
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Feedback">
+                        <input type="reset" value="Clear Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+		
+
+        <p align="center">© 2023 HKCC Feedback System. All feedback is anonymous.</p>
+        <p align="center">Contact: feedback@common.cpce-polyu.edu.hk| Phone: 3345 6788</p>
+</body>
+</html>
