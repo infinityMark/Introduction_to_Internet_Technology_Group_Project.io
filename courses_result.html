@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8" />
     <title>Courses selected</title>
+        <link rel="icon" type="image/x-icon" href="Image_Resource/unnamed.webp">
 </head>
-<body bgcolor="fad100">
-    <table border="0" bgcolor="253a8b" align="left"><tr ><td width="0.4" height="30"></td></tr></table>
-    <p><h1>Courses selected</h1></p>
-    
-    
-    Course Major:<select name="search_courses" placeholder="course major" size="1">
-        <option  value="Science">Science</option>
-        <option  value="Liberal Arts">Liberal Arts</option>
-        <option value="Business">Business</option>
-        </select><br><br>
-    <input type="text" placeholder="course code" name="search_courses">
-    <input type="submit" value="Search"><b></b><a href="resultportal.html"><br><br>
-
-    <INPUT TYPE="reset" VALUE="Back"></a>
+<body bgcolor="#fff780">
+        <table>
+            <tr>
+                <td width="10px"></td>
+                <td width="170px">
+                    <img src="Image_Resource/Test.png" alt="" width="200px">
+                </td>
+                <td width="1125px"></td>
+                <td width="70px" align="center"></td>
+                <td width="15px" align="center"></td>
+                <td width="70px" align="center"></td>
+                <td width="15px" align="center"></td>
+                <td width="110px" align="center">
+                    <a href="resultportal.html">
+                        <img src="Image_Resource/undo_1.png" alt="" width="50px">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#000000" colspan="8"></td>
+            </tr>
+        </table>
+    <table border="0">
+        <tr>
+            <td width="4" height="30" bgcolor="253a8b"></td>
+            <td><h1>Courses selected</h1></td>
+        </tr>
+    </table>
     <br>
+    <form action="resultportal.html" method="post">
+        <table>
+            <tr>
+                <td><p>Course Major:</p></td>
+                <td>
+                    <select name="search_courses" placeholder="course major">
+                        <option  value="Science">Science</option>
+                        <option  value="Liberal Arts">Liberal Arts</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="course code" name="search_courses"></td>
+                <td><input type="submit" value="Search"></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
     <br>
     <table border="0">
         <tr><td colspan="3" width="600" height="30" bgcolor="00fae5">BHMH2002 Introduction to Economics</td >
