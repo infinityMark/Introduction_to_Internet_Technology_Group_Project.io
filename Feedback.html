@@ -23,12 +23,33 @@
         <link rel="icon" type="image/x-icon" href="Image_Resource/unnamed.webp">
 </head>
 <body>
-    <header>
-        <h1 align="center ">Student Feedback Collection</h1>
+    <table>
+        <tr>
+            <td width="10px"></td>
+            <td width="170px">
+                <img src="Image_Resource/Test.png" alt="" width="200px">
+            </td>
+            <td width="1125px"></td>
+            <td width="70px" align="center"></td>
+            <td width="15px" align="center"></td>
+            <td width="70px" align="center"></td>
+            <td width="15px" align="center"></td>
+            <td width="110px" align="center">
+                <a href="Student_Portal.html">
+                    <img src="Image_Resource/undo_1.png" alt="" width="50px">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#000000" colspan="8"></td>
+        </tr>
+    </table>
+    <header align="center">
+        <h1>Student Feedback Collection</h1>
         <p>We value your input to improve our educational programs</p>
     </header>
         <form method="post" action="#">
-            <table border="1">
+            <table border="1" align="center">
                 <caption><h2>Personal Information</h2></caption>
                 <tr>
                     <td width="30%">Full Name:</td>
@@ -45,10 +66,8 @@
                     <td><input type="email" id="email" name="email" size="40" required></td>
                 </tr>
             </table>
-            
             <br>
-            
-            <table border="1">
+            <table border="1" align="center">
                 <caption><h2>Course Information</h2></caption>
                 <tr>
                     <td width="30%">Course:</td>
@@ -84,7 +103,7 @@
             
             <br>
             
-            <table border="1">
+            <table border="1" align="center">
                 <caption><h2>Course Feedback</h2></caption>
                 <tr>
                     <td width="30%">Overall Rating:</td>
@@ -116,7 +135,7 @@
             
             <br>
             
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table border="1" cellpadding="8" cellspacing="0" align="center">
                 <caption><h2>Additional</h2></caption>
                 <tr>
                     <td width="30%">Would you recommend this course?</td>
@@ -141,25 +160,20 @@
             </table>
             
             <br>
-
-<table border="1" width="100%">
-			<caption><h2>Website Feedback</h2></caption>
-			<tr>
-				<td>userfriendly:</td>
-				<td> 
-<input type="radio" id="rating5" name="rating" value="5">Excellent (5)<br>
-                        
+            <table border="1" width="30%" align="center">
+                <caption><h2>Website Feedback</h2></caption>
+                <tr>
+                    <td>userfriendly:</td>
+                    <td> 
+                        <input type="radio" id="rating5" name="rating" value="5">Excellent (5)<br>   
                         <input type="radio" id="rating4" name="rating" value="4">Good (4)<br>
-                        
                         <input type="radio" id="rating3" name="rating" value="3">Average (3)<br>
-                        
-                        <input type="radio" id="rating2" name="rating" value="2">Below Average (2)<br>
-                        
-                        <input type="radio" id="rating1" name="rating" value="1">Poor (1)<br> </td>
-			</tr>
-		</table>
-
-            
+                        <input type="radio" id="rating2" name="rating" value="2">Below Average (2)<br>            
+                        <input type="radio" id="rating1" name="rating" value="1">Poor (1)<br>
+                    </td>
+                    </tr>
+            </table>
+            <br><br><br>
             <table width="100%">
                 <tr>
                     <td align="center">
@@ -169,9 +183,7 @@
                 </tr>
             </table>
         </form>
-		
-
         <p align="center">© 2023 HKCC Feedback System. All feedback is anonymous.</p>
         <p align="center">Contact: feedback@common.cpce-polyu.edu.hk| Phone: 3345 6788</p>
-</body>
+    </body>
 </html>
