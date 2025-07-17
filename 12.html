@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutoring Matchmaking</title>
+</head>
+<body bgcolor="#F0F0F0">
+    
+    <div align="center" bgcolor="#34495e">
+        <font color="BLACK" size="5">
+            <h1>Tutoring Matchmaking</h1>
+            <p>Connect with peer tutors for academic help or share your knowledge!</p>
+        </font>
+    </div>
+    
+    
+    <div align="center" bgcolor="#2c3e50">
+        <font color="BLACK">
+            <a href="#find-tutor"><font color="black">Find a Tutor</font></a> | 
+            <a href="#become-tutor"><font color="black">Become a Tutor</font></a> | 
+            <a href="#Available Tutors"><font color="black">Available Tutors</font></a> | 
+            <a href="#contact"><font color="black">Contact</font></a>
+        </font>
+    </div>
+    
+    
+    <div>
+       
+        <div id="begin" align="center">
+            <h2>Welcome to Tutoring Platform</h2>
+            <p>Connect with peer tutors to get academic help or share your knowledge with fellow students.</p>
+            
+            <table border="0" width="90%" cellpadding="20">
+                <tr>
+                    <td width="50%" valign="top" bgcolor="#ecf0f1">
+                        <h3>For Students Seeking Help</h3>
+                        <p>Find qualified tutors in subjects you're struggling with.</p>
+                        <a href="#find-tutor"><b>Find a Tutor Now</b></a>
+                    </td>
+                    <td width="50%" valign="top" bgcolor="#ecf0f1">
+                        <h3>For Students Who Want to Tutor</h3>
+                        <p>Share your knowledge and earn recognition.</p>
+                        <a href="#become-tutor"><b>Become a Tutor</b></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <hr width="80%" size="1" color="#bdc3c7">
+        
+        
+        <div id="find-tutor" align="center">
+            <h2>Find a Tutor</h2>
+            <form action="#match-results" method="get">
+                <table border="1" width="90%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Academic Information</font></th>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>Course Needing Help:</b></td>
+                        <td>
+                            <input type="text" name="course" size="50" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Help With:</b></td>
+                        <td>
+                            <select name="help_type" required>
+                                <option value="">-- Select --</option>
+                                <option value="homework">Homework</option>
+                                <option value="exam">Exam Preparation</option>
+                                <option value="project">Project Assistance</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Availability & Preferences</font></th>
+                    </tr>
+                    <tr>
+                        <td><b>Tutoring Method:</b></td>
+                        <td>
+                            <select name="tutoring_method" required>
+                                <option value="">-- Select --</option>
+                                <option value="Online Only">Online Only</option>
+                                <option value="In-Person Only">In-Person Only</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Preferred Meeting Times:</b></td>
+                        <td>
+                            <input type="text" name="meeting_times" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Contact Information</font></th>
+                    </tr>
+                    <tr>
+                        <td><b>Your Contact Info:</b></td>
+                        <td>
+                            <input type="text" name="contact_info" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Preferred Contact Method:</b></td>
+                        <td>
+                            <select name="contact_method" required>
+                                <option value="">-- Select --</option>
+                                <option value="Email">Email</option>
+                                <option value="WhatsApp">WhatsApp</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Find Tutors">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <hr width="80%" size="1" color="#bdc3c7">
+        
+        
+        <div id="become-tutor" align="center">
+            <h2>Become a Tutor</h2>
+            <form action="#match-results" method="get">
+                <table border="1" width="90%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Tutoring Expertise</font></th>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>Courses You Can Tutor:</b></td>
+                        <td>
+                            <textarea name="courses" rows="3" cols="50" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Experience Level:</b></td>
+                        <td>
+                            <select name="experience">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Availability</font></th>
+                    </tr>
+                    <tr>
+                        <td><b>Tutoring Method:</b></td>
+                        <td>
+                            <select name="tutoring_method" required>
+                                <option value="">-- Select --</option>
+                                <option value="Online Only">Online Only</option>
+                                <option value="In-Person Only">In-Person Only</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Your Availability:</b></td>
+                        <td>
+                            <input type="text" name="availability" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Additional Information</font></th>
+                    </tr>
+                    <tr>
+                        <td><b>Hourly Rate:</b></td>
+                        <td>
+                            <input type="text" name="rate" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><b>Brief Bio:</b></td>
+                        <td>
+                            <textarea name="bio" rows="4" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Register as Tutor">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <hr width="80%" size="1" color="#bdc3c7">
+        
+       
+        <div id="Available Tutors" align="center">
+            <h2>Available Tutors</h2>
+            <table border="1" width="90%" cellpadding="10" cellspacing="0">
+                <tr bgcolor="#3498db">
+                    <th><font color="white">Name</font></th>
+                    <th><font color="white">Courses</font></th>
+                    <th><font color="white">Availability</font></th>
+                    <th><font color="white">Method</font></th>
+                    <th><font color="white">Experience</font></th>
+                    <th><font color="white">Contact</font></th>
+                </tr>
+                <tr>
+                    <td>Alex Wong</td>
+                    <td>COMP101 Programming, MATH202 Calculus</td>
+                    <td>Mon Evening, Fri Morning</td>
+                    <td>Online or In-person</td>
+                    <td>Advanced (Former TA)</td>
+                    <td><a href="#contact">Contact</a></td>
+                </tr>
+                <tr>
+                    <td>Sarah Lee</td>
+                    <td>PHYS101 Physics, CHEM100 Chemistry</td>
+                    <td>Wed Afternoon, Thu Afternoon</td>
+                    <td>Online Only</td>
+                    <td>Intermediate</td>
+                    <td><a href="#contact">Contact</a></td>
+                </tr>
+                <tr>
+                    <td>Michael Chen</td>
+                    <td>ECON101 Economics, MATH202 Calculus</td>
+                    <td>Tue Afternoon, Fri Morning</td>
+                    <td>In-person Only</td>
+                    <td>Beginner</td>
+                    <td><a href="#contact">Contact</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <hr width="80%" size="1" color="#bdc3c7">
+        
+        
+        <div id="contact" align="center">
+            <h2>Contact Tutor</h2>
+            <form action="#confirmation" method="get">
+                <table border="1" width="90%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th colspan="2" bgcolor="#3498db"><font color="white">Your Information</font></th>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>Your Name:</b></td>
+                        <td>
+                            <input type="text" name="name" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Your Student ID:</b></td>
+                        <td>
+                            <input type="text" name="id" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Your Email:</b></td>
+                        <td>
+                            <input type="text" name="email" required size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><b>Message:</b></td>
+                        <td>
+                            <textarea name="message" rows="6" cols="50" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Send Message">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+        
+    </div>
+</body>
+</html>
