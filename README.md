@@ -14,5 +14,5 @@
 ---
 
 > # Lui Hoi To
-> # Github : hoito46
+> # Github : hoito46 (https://github.com/hoito46)
 > # Email : lamto087@gmail.com
