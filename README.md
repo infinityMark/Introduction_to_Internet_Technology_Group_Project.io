@@ -10,7 +10,7 @@
 > # Wu Jiacheng
 > # Github : infinityMark
 > # Email : jiachengwu14@gmail.com
-> # Corresponding for most webpage writing and photo collection.
+> # Corresponding for most webpage writing, website structure, and photo collection.
 
 ---
 
